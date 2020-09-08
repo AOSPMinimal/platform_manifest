@@ -6,7 +6,6 @@
            review="https://android-review.googlesource.com/" />
   <default revision="android12-dev"
            remote="aosp"
-           sync-j="4" />
            review="sso://googleplex-android/" />
 
   <superproject name="platform/superproject" remote="aosp"/>
