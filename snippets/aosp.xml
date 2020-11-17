@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AOSP Minimal goodies -->
+<manifest>
+
+  <remote  name="aosp-minimal"
+           fetch="https://github.com/AOSPMinimal"
+           revision="aosp-11" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- AOSP Minimal vendor -->
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aosp-minimal" />
+
+</manifest>
