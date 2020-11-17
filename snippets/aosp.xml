@@ -6,10 +6,65 @@
            fetch="https://github.com/AOSPMinimal"
            revision="aosp-11" />
 
+  <remote  name="aosp-common"
+           fetch="https://github.com/AOSP-Common"
+           revision="11.0" />
+
   <remote  name="github"
            fetch="https://github.com/" />
 
-  <!-- AOSP Minimal vendor -->
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aosp-minimal" />
+  <!-- Build -->
+  <project path="build/make" name="platform_build" groups="pdk" remote="aosp-minimal" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="aosp-minimal" clone-depth="1" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="aosp-minimal" clone-depth="1" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="aosp-minimal" clone-depth="1" />
 
+  <!-- Device -->
+  <project path="device/aosp/sepolicy" name="android_device_aosp_sepolicy" remote="aosp-minimal" clone-depth="1" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="aosp-minimal" revision="aosp-11" clone-depth="1" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="aosp-minimal" revision="aosp-11-legacy" clone-depth="1" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="aosp-minimal" revision="aosp-11-legacy-um" clone-depth="1" />
+  <project path="device/qcom/sepolicy/vndr" name="android_device_qcom_sepolicy_vndr" remote="aosp-minimal" clone-depth="1" />
+
+  <!-- System -->
+  <project path="system/bt" name="android_system_bt" remote="aosp-common" clone-depth="1" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="aosp-minimal" clone-depth="1" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="aosp-minimal" clone-depth="1" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="aosp-minimal" revision="aosp-11" clone-depth="1" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="aosp-minimal" clone-depth="1" />
+  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" groups="pdk" remote="aosp-minimal" clone-depth="1" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="aosp-common" clone-depth="1" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosp-minimal" clone-depth="1" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aosp-minimal" clone-depth="1"/>
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="aosp-common" clone-depth="1" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="aosp-common" clone-depth="1" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="aosp-minimal" clone-depth="1" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="aosp-minimal" clone-depth="1" />
 </manifest>
