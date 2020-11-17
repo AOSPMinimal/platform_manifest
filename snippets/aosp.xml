@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AOSP Minimal goodies -->
+<manifest>
+
+  <remote  name="aosp-minimal"
+           fetch="https://github.com/AOSPMinimal"
+           revision="aosp-12" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+</manifest>
