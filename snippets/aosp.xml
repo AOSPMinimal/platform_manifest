@@ -61,6 +61,7 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" groups="qcom,pdk-qcom" remote="aosp-minimal" clone-depth="1" />
   <project path="vendor/support" name="android_vendor_support" remote="aosp-minimal" clone-depth="1"/>
 
   <!-- Packages -->
