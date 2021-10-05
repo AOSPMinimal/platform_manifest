@@ -9,4 +9,14 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
+  <!-- Vendor AOSP -->
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aosp-minimal" />
+  <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="aosp-minimal" />
+
+  <!-- Bootable AOSP -->
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="aosp-minimal" />
+
+  <!-- Frameworks AOSP -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="aosp-minimal" />
+
 </manifest>
