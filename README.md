@@ -24,6 +24,6 @@ repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimiz
 **Build the rom**
 ```bash
 . build/envsetup.sh
-lunch aosp_($Device)-userdebug
+lunch ($Device)-userdebug
 make bacon
 ```
