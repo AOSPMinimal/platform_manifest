@@ -30,6 +30,7 @@
 
   <!-- Hardware AOSP -->
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" remote="aosp-minimal" />
+  <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom-caf_bt" remote="aosp-minimal" />
 
   <!-- Bootable AOSP -->
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="aosp-minimal" />
