@@ -29,6 +29,8 @@
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="aosp-minimal" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="aosp-minimal" />
   <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator" remote="aosp-minimal" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="platform_vendor_qcom_opensource_audio-hal_st-hal" remote="aosp-minimal" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aosp-minimal" />
 
   <!-- Hardware AOSP -->
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" remote="aosp-minimal" />
