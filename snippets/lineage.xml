@@ -54,7 +54,6 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qcom_fm" remote="LineageOS" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="LineageOS" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="LineageOS" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="LineageOS" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" remote="LineageOS" />

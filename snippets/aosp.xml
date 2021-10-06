@@ -27,6 +27,7 @@
   <!-- Vendor AOSP -->
   <project path="vendor/aosp" name="platform_vendor_aosp" remote="aosp-minimal" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="aosp-minimal" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="aosp-minimal" />
 
   <!-- Hardware AOSP -->
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" remote="aosp-minimal" />
