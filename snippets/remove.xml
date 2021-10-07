@@ -54,6 +54,8 @@
   <!-- AOSP -->
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/system/core" />

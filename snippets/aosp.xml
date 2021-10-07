@@ -40,8 +40,12 @@
   <!-- Bootable AOSP -->
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="aosp-minimal" />
 
+  <!-- Packages AOSP -->
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosp-minimal" />
+
   <!-- Frameworks AOSP -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosp-minimal" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosp-minimal" />
 
   <!-- System AOSP -->
   <project path="system/core" name="platform_system_core" remote="aosp-minimal" />
