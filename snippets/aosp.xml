@@ -35,12 +35,19 @@
   <!-- Hardware AOSP -->
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" remote="aosp-minimal" />
   <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom-caf_bt" remote="aosp-minimal" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="aosp-minimal" />
 
   <!-- Bootable AOSP -->
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="aosp-minimal" />
 
   <!-- Frameworks AOSP -->
-  <!-- <project path="frameworks/av" name="platform_frameworks_av" remote="aosp-minimal" /> -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="aosp-minimal" />
+
+  <!-- System AOSP -->
+  <project path="system/core" name="platform_system_core" remote="aosp-minimal" />
+
+  <!-- Root AOSP -->
+  <project path="bionic" name="platform_bionic" remote="aosp-minimal" />
 
   <!-- Aosp clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r383902b" name="platform_prebuilts_clang_host_linux-x86_clang-r383902b" remote="aosp-minimal" />
