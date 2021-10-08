@@ -61,5 +61,6 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/packages/apps/Camera2" />
 
 </manifest>
